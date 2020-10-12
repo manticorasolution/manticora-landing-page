@@ -3,6 +3,7 @@ import GlobalStyle from '../styles/global';
 import Container from './styles';
 import logo from '../imgs/manticora-material-black-inverted-semfundo.png';
 import hero from '../imgs/manticora-img-landing.png';
+import Button from '../components/Button';
 
 const Landing = () => {
 	return (
@@ -21,21 +22,21 @@ const Landing = () => {
 					<img alt="Dispositivos acessando ferramentas da Manticora" src={hero} />
 				</div>
 				<div className="main-info">
-					{/* <div>
-						<h2>App</h2>
-						<p>descrição</p>
-						<button>botao download</button>
+					<div className="app">
+						<h2>Aplicativo</h2>
+						<p>Cadastre seu carregamento de maneira fácil escaneando os códigos de barra com o App da Manticora.</p>
+						<Button className="button" icon="android" text="Acesso antecipado" redirectTo="https://drive.google.com/file/d/11EnRFxK9rbXM7cBWFE8XT6OjR_d9a6oe/view?usp=sharing" />
 					</div>
-					<div>
-						<h2>Dash</h2>
-						<p>descrição</p>
-						<button>botao download</button>
+					<div className="dash">
+						<h2>Painel inteligente</h2>
+						<p>Controle faturamento, estoque, pedidos e receba indicações personalizadas 	com o Painel inteligente da Manticora.</p>
+						<Button className="button" icon="link" text="Acesso antecipado" redirectTo="https://painelinteligente.manticora.app" />
 					</div>
-					<div>
+					<div className="ecommerce">
 						<h2>Loja virtual</h2>
-						<p>descrição</p>
-						<button>botao download</button>
-					</div> */}
+						<p>Venda seus produtos de maneira fácil e rápida com a Loja virtual da Manticora. E o mais importante: sem contato!</p>
+						<Button className="button" icon="link" text="Acesso antecipado" redirectTo="https://lojavirtual.manticora.app" />
+					</div>
 				</div>
 				<div className="about-us"></div>
 			</main>

@@ -94,15 +94,74 @@ const Container = styled.div`
 			grid-area: mainInfo;
 			height: 35vh;
 
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			max-width: 70vw;
+			grid-template-areas: "title1 title2 title3"
+														"desc1 desc2 desc3"
+														"button1 button2 button 3";
 
-			div {
-				text-align: justify;
+			margin: auto;
+			padding-top: 10vh;
+
+			.app, .ecommerce, .dash {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-end;
+
+				text-align: center;
+				padding: 20px;
 				margin: 15px;
 			}
+
+			.app {
+
+				h2 {
+					grid-area: title1
+				}
+
+				p {
+					grid-area: desc1;
+					padding: 30px 15px;
+				}
+
+				button {
+					grid-area: button1
+				}
+			}
+
+			.dash {
+				h2 {
+					grid-area: title2
+				}
+
+				p {
+					grid-area: desc2;
+					padding: 30px 15px;
+				}
+
+				button {
+					grid-area: button2
+				}
+			}
+			.ecommerce {
+
+				h2 {
+					grid-area: title3
+				}
+
+				p {
+					grid-area: desc3;
+					padding: 30px 15px;
+				}
+
+				button {
+					grid-area: button3
+				}
+			}
+
 		 }
 
 		.about-us { 
@@ -120,8 +179,7 @@ const Container = styled.div`
 	}
 
 	footer {  
-		grid-area: madeWith;
-		height: 10vh;
+		grid-area: madeWith;		height: 10vh;
 
 		display: flex;
 		justify-content: center;

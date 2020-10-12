@@ -16,7 +16,7 @@ export default createGlobalStyle`
 
 	body {
 		font-family: 'Commissioner', sans-serif;
-		background: #ecedef;
+		background: #fefefe;
 		color: #45454b;
 		-webkit-font-smoothing: antialiased !important;
 	}
