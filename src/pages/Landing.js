@@ -16,7 +16,12 @@ const Landing = () => {
 			<main>
 				<div className="main-title">
 					<h1>Gerencie seu negócio do começo ao fim.</h1>
-					<p>A maneira mais simples e completa de controlar seu micro e pequeno negócio.</p>
+					<p>Ajudamos pequenos varejistas a realizarem
+					suas tarefas de maneira simples e
+					intuitiva, unindo as melhores ferramentas
+					e processos, para que eles vendam mais
+					e com mais lucratividade.
+					</p>
 				</div>
 				<div className="main-logo">
 					<img alt="Dispositivos acessando ferramentas da Manticora" src={hero} />

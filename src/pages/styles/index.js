@@ -16,7 +16,7 @@ const Container = styled.div`
 	header { 
 		grid-area: manticora;
 		background: #4a51b6;
-		height: 10vh;
+		height: 20vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -24,7 +24,7 @@ const Container = styled.div`
 		font-weight: 600;
 		color: #fefefe;
 
-		padding-top: 25px;
+		padding-top: 35px;
 
 		img {
 			height: 8vh;
@@ -44,7 +44,7 @@ const Container = styled.div`
 		.main-title { 
 			grid-area: mainTitle;
 			background: #4a51b6;
-			height: 25vh;
+			height: 15vh;
 
 			display: grid;
 			grid-template-columns: 1fr;
@@ -53,7 +53,7 @@ const Container = styled.div`
 			font-weight: 800;
 			color: #fefefe;
 
-			padding-bottom: 30px;
+			padding-bottom: 10px;
 			
 			h1 {
 				display: flex;
@@ -64,10 +64,12 @@ const Container = styled.div`
 
 			p {
 				display: flex;
+				padding: 0 30vw;
 				align-items: flex-start;
 				justify-content: center;
+				text-align: center;
 				font-weight: 200;
-				font-size: 0.8rem
+				font-size: 0.8rem;
 			}
 		 }
 
