@@ -5,14 +5,11 @@ const Container = styled.div`
 	
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 0.1fr 1fr 1.5fr 1.2fr 0.8fr;
+	grid-template-rows: 0.1fr 1fr 1.5fr 1.2fr;
 	grid-template-areas: "manticora"
 												"mainTitle"
 												"mainImage"
-												"mainInfo"
-												"aboutUs"
-												"madeWith";
-
+												"mainInfo";
 	header { 
 		grid-area: manticora;
 		background: #4a51b6;
@@ -165,27 +162,10 @@ const Container = styled.div`
 			}
 
 		 }
-
-		.about-us { 
-			grid-area: aboutUs;
-			height: 20vh;
-
-			display: flex;
-			justify-content: center;
-			align-items: center;
-
-			div {
-				margin: 10px;
-			}
-		 }
 	}
 
 	footer {  
-		grid-area: madeWith;		height: 10vh;
-
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		height: 10vh;
 	}
 
 `;
