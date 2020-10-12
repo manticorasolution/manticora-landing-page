@@ -10,7 +10,7 @@ const Landing = () => {
 	return (
 		<Container>
 			<GlobalStyle />
-			<header>
+			<header className="bg-blue">
 				<img alt="manticora-logo" src={logo} />
 				<p>Manticora</p>
 			</header>
@@ -24,7 +24,7 @@ const Landing = () => {
 					e com mais lucratividade.
 					</p>
 				</div>
-				<div className="main-logo">
+				<div className="main-logo" id="bg-blue">
 					<img alt="Dispositivos acessando ferramentas da Manticora" src={hero} />
 				</div>
 				<div className="main-info">
@@ -54,7 +54,6 @@ const Landing = () => {
 					</div>
 				</div>
 			</main>
-			<footer></footer>
 		</Container>
 	);
 }

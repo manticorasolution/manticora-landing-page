@@ -234,10 +234,6 @@ const Container = styled.div`
 		 }
 	}
 
-	footer {  
-		height: 10vh;
-	}
-
 `;
 
 export default Container;

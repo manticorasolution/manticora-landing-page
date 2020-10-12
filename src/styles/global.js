@@ -18,6 +18,10 @@ export default createGlobalStyle`
 		background: #fefefe;
 		color: #45454b;
 		-webkit-font-smoothing: antialiased !important;
+
+		.bg-blue, #bg-blue {
+			background: #4a51b6;
+		}
 	}
 
 `;
