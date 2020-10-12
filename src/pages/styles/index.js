@@ -23,6 +23,10 @@ const Container = styled.div`
 
 		padding-top: 35px;
 
+		@media (max-width: 600px) {
+			width: 100%;
+		}
+
 		img {
 			height: 8vh;
 			width: 8vh;
@@ -41,7 +45,7 @@ const Container = styled.div`
 		.main-title { 
 			grid-area: mainTitle;
 			background: #4a51b6;
-			height: 15vh;
+			height: 20vh;
 
 			display: grid;
 			grid-template-columns: 1fr;
@@ -49,14 +53,13 @@ const Container = styled.div`
 
 			font-weight: 800;
 			color: #fefefe;
-
-			padding-bottom: 10px;
 			
 			h1 {
 				display: flex;
 				align-items: flex-end;
 				justify-content: center;
 				padding: 10px;
+				text-align: center;
 			}
 
 			p {
@@ -68,6 +71,27 @@ const Container = styled.div`
 				font-weight: 200;
 				font-size: 0.8rem;
 			}
+
+			@media (max-width: 1100px) {
+				width: 100%;
+				 
+				p {
+					padding: 0 25vw;
+				}
+			}
+
+			@media(max-width: 600px) {
+
+				h1 {
+					width: 100%;
+					padding: 20px 5vw
+				}
+				p {
+					width: 100%;
+					padding: 0 10vw;
+				}
+			}
+
 		 }
 
 		.main-logo { 
@@ -87,22 +111,34 @@ const Container = styled.div`
 				padding-top: 10px;
 				margin-top: 80px;
 			}
+			
+			@media(max-width: 600px) {
+				height: 30vh;
+				margin: 0;
+				border: 0;
+
+				img {
+					height: 85%;
+				}
+			}
+
 		 }
 
 		.main-info { 
 			grid-area: mainInfo;
 			height: 35vh;
+			width: 100%;
 
+			padding: 20vw;
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
 			grid-template-rows: 1fr 1fr 1fr;
-			max-width: 70vw;
 			grid-template-areas: "title1 title2 title3"
 														"desc1 desc2 desc3"
 														"button1 button2 button 3";
 
 			margin: auto;
-			padding-top: 10vh;
+			padding-top: 15vh;
 
 			.app, .ecommerce, .dash {
 				display: flex;
@@ -111,8 +147,7 @@ const Container = styled.div`
 				justify-content: flex-end;
 
 				text-align: center;
-				padding: 20px;
-				margin: 15px;
+				
 			}
 
 			.app {
@@ -161,6 +196,41 @@ const Container = styled.div`
 				}
 			}
 
+		 }
+
+		 @media(max-width: 1100px) {			 
+			 .app, .ecommerce, .dash {
+			 		width: 100%;
+			 }
+		 }
+
+		 @media(max-width: 1000px) {			 
+			 .main-info {
+			 		width: 100%;
+					padding: 60px 10px;
+					margin: none;
+			 }
+		 }
+
+		 @media(max-width: 600px) {	
+
+			 .app, .ecommerce, .dash {
+			 		display:grid;
+					 grid-template-columns: 1fr;
+					 width: 100%;
+					 margin-top: 10vh;
+
+			 }
+
+			 .main-info {
+			 		display: grid;
+					grid-template-columns: 1fr;
+					grid-template-rows: 1fr 1fr 1fr;
+
+					p {
+						padding: 0 20vw
+					}
+			 }
 		 }
 	}
 
